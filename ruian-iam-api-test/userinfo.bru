@@ -1,0 +1,23 @@
+meta {
+  name: userinfo
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://login.ruianding.com/userinfo
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ1c2VybmFtZSI6InhpYW9kaW5nIiwiZXhwIjoxNzQzNDEyNzI5fQ.meN2ioMYL3NOhHBmj8CpCjGEZuS2S6MKmgZbnj9vEt0
+}
+
+body:json {
+  {
+    "username": "xiaoding",
+    "password": "password123"
+  }
+}

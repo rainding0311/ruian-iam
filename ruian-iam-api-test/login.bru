@@ -1,0 +1,23 @@
+meta {
+  name: login
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://login.ruianding.com/token
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "grant_type": "refresh_token",
+      "username": "testuser",
+      "refresh_token": "13ec24eec35bf90343e4328063436e7f9c22226a2f3f11ea9e62e41503ad5d4f"
+  }
+}

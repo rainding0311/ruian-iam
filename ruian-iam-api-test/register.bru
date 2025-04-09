@@ -1,0 +1,22 @@
+meta {
+  name: register
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://login.ruianding.com/register
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "username": "xiaoding",
+    "password": "password123"
+  }
+}
